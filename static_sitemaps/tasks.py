@@ -8,10 +8,10 @@ from static_sitemaps.generator import SitemapGenerator
 __author__ = 'xaralis'
 
 
-class GenerateSitemap(PeriodicTask):
-    run_every = timedelta(minutes=conf.CELERY_TASK_REPETITION)
+# class GenerateSitemap(PeriodicTask):
+#     run_every = timedelta(minutes=conf.CELERY_TASK_REPETITION)
 
-    def run(self, **kwargs):
-        generator = SitemapGenerator(verbosity=1)
-        generator.write()
+#     def run(self, **kwargs):
+#         generator = SitemapGenerator(verbosity=1)
+#         generator.write()
 
